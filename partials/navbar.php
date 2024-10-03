@@ -17,8 +17,8 @@
         <div id="nav-links" class="hidden lg:flex flex-grow items-center justify-end space-x-4 ml-auto">
             <a href="/index.php" class="hover:bg-gray-800 px-4 py-2 rounded transition-colors duration-300">Home</a>
             <a href="/views/about.php" class="hover:bg-gray-800 px-4 py-2 rounded transition-colors duration-300">About</a>
-            <a href="/views/contact.php" class="hover:bg-gray-800 px-4 py-2 rounded transition-colors duration-300">Blogs</a>
-            <a href="/views/info.php" class="hover:bg-gray-800 px-4 py-2 rounded transition-colors duration-300">Tutorials</a>
+            <a href="/blogs.php" class="hover:bg-gray-800 px-4 py-2 rounded transition-colors duration-300">Blogs</a>
+            <a href="/tutorials.php" class="hover:bg-gray-800 px-4 py-2 rounded transition-colors duration-300">Tutorials</a>
             <a href="/views/info.php" class="hover:bg-gray-800 px-4 py-2 rounded transition-colors duration-300">Contact</a>
         </div>
     </div>
@@ -28,8 +28,8 @@
         <div class="px-4 py-2">
             <a href="/index.php" class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300">Home</a>
             <a href="/views/about.php" class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300">About</a>
-            <a href="/views/contact.php" class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300">Blogs</a>
-            <a href="/views/info.php" class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300">Tutorials</a>
+            <a href="/blogs.php" class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300">Blogs</a>
+            <a href="/tutorials.php" class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300">Tutorials</a>
             <a href="/views/info.php" class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300">Conatact</a>
         </div>
     </div>

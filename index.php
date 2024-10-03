@@ -18,7 +18,7 @@
     <!-- Open Graph Tags for Social Media Sharing -->
     <meta property="og:title" content="Imperial Journal">
     <meta property="og:description" content="Imperial Journal is your ultimate resource for tutorials, blogs, and career paths in technology and computer science.">
-    <meta property="og:image" content="/assets/image/og.png"> <!-- Add a relevant image URL -->
+    <meta property="og:image" content="/assets/favicon_io2/android-chrome-512x512.png"> <!-- Add a relevant image URL -->
     <meta property="og:url" content="https://imperialjournal.com/"> <!-- Replace with your website URL -->
     <meta property="og:type" content="website">
     
