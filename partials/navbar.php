@@ -45,10 +45,16 @@
 
     
 
-   <!-- Secondary Navbar for Tutorials -->
-<nav class="bg-gray-700 p-2 shadow-md">
-    <div class="container mx-auto">
-        <div class="flex space-x-4 overflow-x-auto">
+   <!-- Secondary Navbar for Tutorials with Scrollable Feature -->
+<nav class="bg-gray-700 p-2 shadow-md relative">
+    <div class="container mx-auto flex items-center space-x-2">
+        <!-- Left Scroll Button -->
+        <button id="scrollLeft" class="text-white bg-gray-600 hover:bg-gray-500 p-2 rounded-full focus:outline-none">
+            &#9664;
+        </button>
+
+        <!-- Scrollable Navbar -->
+        <div id="scrollableNavbar" class="flex space-x-4 overflow-x-auto scrollbar-hide">
             <a href="#" class="text-white hover:text-[#61afef] hover:bg-gray-600 transition-colors duration-300 rounded px-3 py-2 whitespace-nowrap">C++</a>
             <a href="#" class="text-white hover:text-[#61afef] hover:bg-gray-600 transition-colors duration-300 rounded px-3 py-2 whitespace-nowrap">Python</a>
             <a href="#" class="text-white hover:text-[#61afef] hover:bg-gray-600 transition-colors duration-300 rounded px-3 py-2 whitespace-nowrap">Java</a>
@@ -57,8 +63,51 @@
             <a href="#" class="text-white hover:text-[#61afef] hover:bg-gray-600 transition-colors duration-300 rounded px-3 py-2 whitespace-nowrap">React</a>
             <a href="#" class="text-white hover:text-[#61afef] hover:bg-gray-600 transition-colors duration-300 rounded px-3 py-2 whitespace-nowrap">Angular</a>
             <a href="#" class="text-white hover:text-[#61afef] hover:bg-gray-600 transition-colors duration-300 rounded px-3 py-2 whitespace-nowrap">SQL</a>
+            <a href="#" class="text-white hover:text-[#61afef] hover:bg-gray-600 transition-colors duration-300 rounded px-3 py-2 whitespace-nowrap">Machine Learning</a>
+            <a href="#" class="text-white hover:text-[#61afef] hover:bg-gray-600 transition-colors duration-300 rounded px-3 py-2 whitespace-nowrap">Artificial Intelligence</a>
+            <a href="#" class="text-white hover:text-[#61afef] hover:bg-gray-600 transition-colors duration-300 rounded px-3 py-2 whitespace-nowrap">Data Structures</a>
+            <a href="#" class="text-white hover:text-[#61afef] hover:bg-gray-600 transition-colors duration-300 rounded px-3 py-2 whitespace-nowrap">Algorithms</a>
+            <a href="#" class="text-white hover:text-[#61afef] hover:bg-gray-600 transition-colors duration-300 rounded px-3 py-2 whitespace-nowrap">Operating Systems</a>
+            <a href="#" class="text-white hover:text-[#61afef] hover:bg-gray-600 transition-colors duration-300 rounded px-3 py-2 whitespace-nowrap">Networks</a>
+            <a href="#" class="text-white hover:text-[#61afef] hover:bg-gray-600 transition-colors duration-300 rounded px-3 py-2 whitespace-nowrap">Cybersecurity</a>
+            <a href="#" class="text-white hover:text-[#61afef] hover:bg-gray-600 transition-colors duration-300 rounded px-3 py-2 whitespace-nowrap">Blockchain</a>
+            <a href="#" class="text-white hover:text-[#61afef] hover:bg-gray-600 transition-colors duration-300 rounded px-3 py-2 whitespace-nowrap">Big Data</a>
+            <a href="#" class="text-white hover:text-[#61afef] hover:bg-gray-600 transition-colors duration-300 rounded px-3 py-2 whitespace-nowrap">Cloud Computing</a>
+            <a href="#" class="text-white hover:text-[#61afef] hover:bg-gray-600 transition-colors duration-300 rounded px-3 py-2 whitespace-nowrap">DevOps</a>
+            <a href="#" class="text-white hover:text-[#61afef] hover:bg-gray-600 transition-colors duration-300 rounded px-3 py-2 whitespace-nowrap">Software Engineering</a>
         </div>
+
+        <!-- Right Scroll Button -->
+        <button id="scrollRight" class="text-white bg-gray-600 hover:bg-gray-500 p-2 rounded-full focus:outline-none">
+            &#9654;
+        </button>
     </div>
 </nav>
+
+<script>
+    const scrollableNavbar = document.getElementById('scrollableNavbar');
+    const scrollLeft = document.getElementById('scrollLeft');
+    const scrollRight = document.getElementById('scrollRight');
+
+    scrollLeft.addEventListener('click', () => {
+        scrollableNavbar.scrollBy({ left: -200, behavior: 'smooth' });
+    });
+
+    scrollRight.addEventListener('click', () => {
+        scrollableNavbar.scrollBy({ left: 200, behavior: 'smooth' });
+    });
+</script>
+
+<style>
+    /* Hide scrollbar for the scrollable navbar */
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar-hide {
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+    }
+</style>
+
 
     
